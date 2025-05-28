@@ -9,3 +9,4 @@ jobs:
       - run: echo "ciao sono una stringa 2"
       - run: python --version
       - run: pip --version
+      - run: lsb_release -d
