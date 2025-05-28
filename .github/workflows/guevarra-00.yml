@@ -13,15 +13,17 @@ jobs:
       - run: ls -la 
       - run: pwd
       - run: env
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v4 # svolge git clone
         with:
           sparse-checkout: |
             guevarra
       - run: ls -la 
-      - uses: actions/setup-python@v5
+      - uses: actions/setup-python@v5 # equivalente di venv
         with:
           python-version: '3.12.7'
       - run: python --version
       - run: python prova.py
+        working-directory: guevarra
+      - run: pip install requirements.txt
         working-directory: guevarra
     
