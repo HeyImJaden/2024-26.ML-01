@@ -22,3 +22,5 @@ jobs:
         with:
           python-version: '3.12.7'
       - run: python --version
+      - run: guevarra/prova.py
+    
