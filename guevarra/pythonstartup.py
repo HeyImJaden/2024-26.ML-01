@@ -7,7 +7,7 @@
 import pandas as pd
 
 # %%
-df = pd.read_csv(r"C:\Users\JadeOliverGuevarra\OneDrive - ITS Angelo Rizzoli\Documenti\GitHub\2024-26.ML-01\guevarra\startup data.csv")
+df = pd.read_csv(r"C:\Users\JadeOliverGuevarra\OneDrive - ITS Angelo Rizzoli\Documenti\GitHub\2024-26.ML-01\guevarra\startupdata.csv")
 
 # %%
 df
