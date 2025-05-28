@@ -141,7 +141,7 @@ pipe = Pipeline([
 ])
 
 # %%
-pipe.fit(X_train, y_train)
+pipe_fittato = pipe.fit(X_train, y_train)
 
 # %%
 y_pred_train = pipe.predict(X_train)
@@ -230,3 +230,7 @@ log_losslr = log_loss(y_test, y_proba)
 log_losslr
 
 
+# %%
+import joblib
+
+joblib.dump(pipe_fittato, "logistic_model.joblib")
