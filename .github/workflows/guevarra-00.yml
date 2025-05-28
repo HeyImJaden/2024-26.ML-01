@@ -26,5 +26,6 @@ jobs:
         working-directory: guevarra
       - run: pip install -r requirements.txt
         working-directory: guevarra
-      - run: python pythonstartup.py --dataset_path=startupdata.csv
+      - run: python pythonstartup.py --dataset_path startupdata.csv
         working-directory: guevarra
+
