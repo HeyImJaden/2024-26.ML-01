@@ -7,7 +7,7 @@
 import pandas as pd
 
 # %%
-df = pd.read_csv("guevarra\startupdata.csv")
+df = pd.read_csv("startupdata.csv")
 
 # %%
 df
