@@ -2,7 +2,7 @@ import pandas as pd
 from sklearn.model_selection import train_test_split
 from sklearn.linear_model import LinearRegression
 
-df = pd.read_csv("guevarra\house_price_regression_dataset.csv")
+df = pd.read_csv("house_price_regression_dataset.csv")
 
 print(df.head())
 
