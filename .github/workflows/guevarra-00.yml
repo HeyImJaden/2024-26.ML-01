@@ -26,6 +26,13 @@ jobs:
         working-directory: guevarra
       - run: python training_ML_guevarra.py --dataset_path house_price_regression_dataset.csv
         working-directory: guevarra
+      - uses: actions/checkout@v4
+        with:
+          sparse-checkout: |
+            .github
+            guevarra
+            test_app.py
+            app.py
       - uses: actions/upload-artifact@v4
         with:
           name: my-artifact
