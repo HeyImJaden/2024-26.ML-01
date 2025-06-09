@@ -24,7 +24,7 @@ jobs:
       - run: python --version
       - run: pip install -r requirements.txt
         working-directory: guevarra
-      - run: python training_ML_guevarra --dataset_path house_price_regression_dataset.csv
+      - run: python training_ML_guevarra.py --dataset_path house_price_regression_dataset.csv
         working-directory: guevarra
       - uses: actions/upload-artifact@v4
         with:
